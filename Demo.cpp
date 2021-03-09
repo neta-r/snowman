@@ -13,12 +13,15 @@ using namespace std;
 
 int main() {
 
-	cout << ariel::snowman(11114411) << endl;   /* Should print:
+	cout << ariel::snowman(14224132) << endl;   /* Should print:
 _===_
 (.,.)
 ( : )
 ( : )
 	*/
+	std::string std = "       \n _===_ \n (o o) \n< (> <)>\n (\" \") \n";
+	cout << std<<endl;
+	cout << "========" << endl;
 	cout << ariel::snowman(33232124) << endl;   /* Should print:
    _
   /_\
@@ -26,6 +29,7 @@ _===_
  (] [)>
  (   )
 	*/
+    cout << "========" << endl;
 	try {
 		cout << ariel::snowman(5) << endl;   // Exception - not a valid code
 	} catch (exception& ex) {
